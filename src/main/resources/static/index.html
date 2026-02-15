@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Metadata Microservice | freeCodeCamp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>API Project: File Metadata Microservice</h1>
+
+    <div class="card">
+        <h3>Usage:</h3>
+        <p>Please upload a file to view its metadata.</p>
+
+        <form enctype="multipart/form-data" method="POST" action="/api/fileanalyse">
+            <div class="form-group">
+                <input id="inputfield" type="file" name="upfile" required>
+            </div>
+            <div class="form-group">
+                <button id="button" type="submit">Upload & Analyse</button>
+            </div>
+        </form>
+    </div>
+
+
+</div>
+</body>
+</html>
