@@ -8,7 +8,6 @@ import java.util.Map;
 public class Controller {
     @PostMapping("/api/fileanalyse")
     public Map<String, Object> getFileMetadata(@RequestParam("upfile") MultipartFile file) {
-        // FCC specifically requires: name, type, and size
         return Map.of(
                 "name", file.getOriginalFilename(),
                 "type", file.getContentType(),
